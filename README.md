@@ -8,7 +8,7 @@ O objetivo é organizar as tarefas de cada líder de campo para poder fazer uma 
 ## O que tem aqui
 | Pasta / arquivo | O que é |
 |---|---|
-| `app/index.html` | Código do app (versão v21, igual à publicada em 26/11/2026) |
+| `app/index.html` | Código do app (versão publicada no link; v22 em 26/11/2026: aba Concluídas) |
 | `backups/AAAA-MM-DD/tarefas.csv` | Planilha com todas as tarefas naquela data |
 | `backups/AAAA-MM-DD/dados-completos.json` | Cópia completa do banco (líderes e tarefas, com IDs), serve para restaurar |
 | `docs/projeto-gestao-tarefas-lideres.md` | Documento do projeto: o que o app faz, líderes, pendências e próximos passos |
