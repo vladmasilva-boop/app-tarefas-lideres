@@ -1,0 +1,1135 @@
+{
+ "lideres": {
+  "3x37aki93dy0bhyfk161": {
+   "nome": "Gabriel",
+   "ordem": 6,
+   "unidade": "MG"
+  },
+  "6o09ncac6ze38p5xvpu3": {
+   "nome": "Vladimir",
+   "ordem": 6,
+   "unidade": "Geral"
+  },
+  "d9qx9u1xlp91yc0n83ob": {
+   "nome": "Samuel",
+   "ordem": 1,
+   "unidade": "Gestor SC"
+  },
+  "j28boe12poco2dumh3j0": {
+   "nome": "Mike",
+   "ordem": 2,
+   "unidade": "MG"
+  },
+  "jak020k702jtqz2uyxef": {
+   "nome": "Alessandro Single",
+   "ordem": 5,
+   "unidade": "MG"
+  },
+  "mioigou96fc0227z1tf2": {
+   "nome": "Heloísa Piscna",
+   "ordem": 4,
+   "unidade": "MG"
+  },
+  "ze16w5vzsuajhznlaqv1": {
+   "nome": "Valéria - Office Manager",
+   "ordem": 8,
+   "unidade": "BH"
+  },
+  "zwrqjdg2dge07c58jkyy": {
+   "nome": "Tiago",
+   "ordem": 7,
+   "unidade": "Obra"
+  }
+ },
+ "tarefas": {
+  "05nzd8zkjtwfle3vbh2w": {
+   "atualizadaEm": "2026-10-19T15:08:00.088Z",
+   "criadaEm": "2026-10-19T14:29:37.266Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Uniformes Single Santo Agostinho"
+  },
+  "0gaod1f9twtfijsq6r72": {
+   "atualizadaEm": "2026-11-25T21:07:21.544Z",
+   "criadaEm": "2026-11-25T21:05:24.541Z",
+   "entrega": "",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Acompanhar comercial Dezembro"
+  },
+  "0lnfxzu7xen7eoso21uz": {
+   "atualizadaEm": "2026-10-22T12:15:04.168Z",
+   "criadaEm": "2026-10-19T15:25:38.670Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Cancelamento Viajem SC"
+  },
+  "1di1j6e0c6luje0b4t2l": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:36:25.524Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 9,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-05",
+   "status": "afazer",
+   "titulo": "9. Layout Sete Lagoas"
+  },
+  "1f73oo0k3zoxzry0pdbc": {
+   "atualizadaEm": "2026-11-22T13:44:36.334Z",
+   "criadaEm": "2026-10-26T12:07:15.115Z",
+   "entrega": "",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-11-18",
+   "status": "feita",
+   "titulo": "Unisul - dia 23/11 (inauguração)"
+  },
+  "1zmnqwhxzfor7ky385ju": {
+   "atualizadaEm": "2026-11-25T20:27:48.346Z",
+   "criadaEm": "2026-10-19T12:14:52.035Z",
+   "entrega": "",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-12-11",
+   "status": "andamento",
+   "titulo": "Backoffice: Continuo trabalhando com o Matheus na organização e acompanhamento dos números de vendas e alunos ativos.",
+   "transf": {
+    "de": "d9qx9u1xlp91yc0n83ob",
+    "em": "2026-11-10"
+   }
+  },
+  "2j7duibrxdy0wkjk5lse": {
+   "atualizadaEm": "2026-11-13T14:33:07.339Z",
+   "criadaEm": "2026-10-26T19:02:35.261Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-12-11",
+   "status": "feita",
+   "titulo": "Compras Sion"
+  },
+  "3ep339ico7q9advml7lw": {
+   "atualizadaEm": "2026-11-10T22:48:45.501Z",
+   "criadaEm": "2026-10-19T15:27:53.116Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-12-11",
+   "status": "andamento",
+   "titulo": "Programa de Indicação"
+  },
+  "3pmgriouy7v3zn05zrb2": {
+   "atualizadaEm": "2026-10-24T09:29:36.321Z",
+   "criadaEm": "2026-10-19T12:14:28.079Z",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Tecellen: Virada prevista para esta semana. Preciso alinhar com o Mike e conferir os pontos pendentes."
+  },
+  "3tctngrqp2zz667nor4k": {
+   "atualizadaEm": "2026-11-25T20:16:52.061Z",
+   "criadaEm": "2026-10-23T12:57:19.824Z",
+   "entrega": "Marlon",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "Projeto Elétrico",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "4sr98unnaq834e8qej2n": {
+   "atualizadaEm": "2026-11-25T20:57:53.588Z",
+   "criadaEm": "2026-11-25T20:57:27.767Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Preparação dos estúdios Class janeiro 2027"
+  },
+  "4t6a6xyfm4fo9ulkz7bo": {
+   "atualizadaEm": "2026-11-25T21:01:03.821Z",
+   "criadaEm": "2026-11-25T20:59:23.614Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Organização das tarefas"
+  },
+  "4wail8wylvpwmksvwd9p": {
+   "atualizadaEm": "2026-11-10T22:48:17.124Z",
+   "criadaEm": "2026-10-28T21:28:53.955Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-29",
+   "status": "feita",
+   "titulo": "Uniformes com a Lívia"
+  },
+  "72bquoz1cfxfic7u57ci": {
+   "atualizadaEm": "2026-10-24T09:29:37.358Z",
+   "criadaEm": "2026-10-19T12:14:35.843Z",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Obra Giassi: Previsão de finalização nesta semana, com conclusão do drywall e instalação do blindex."
+  },
+  "7oymupzmpldboelwv73w": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-10-22T13:04:46.168Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 4,
+   "pai": "proj-layouts",
+   "prazo": "2026-11-28",
+   "status": "afazer",
+   "titulo": "4. Layout São Bento"
+  },
+  "81qyloumi2u680z0o64l": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-10-22T13:04:00.414Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 2,
+   "pai": "proj-layouts",
+   "prazo": "2026-11-21",
+   "status": "afazer",
+   "titulo": "3. Layout Cachoeirinha"
+  },
+  "8uuewdox4cdzaylmk3rh": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:36:39.534Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 10,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-12",
+   "status": "afazer",
+   "titulo": "10. Layout Industrial"
+  },
+  "9faacze32382wynq067o": {
+   "atualizadaEm": "2026-11-10T22:07:39.163Z",
+   "criadaEm": "2026-10-26T10:54:50.174Z",
+   "entrega": "",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-10-29",
+   "status": "feita",
+   "titulo": "Treino da Semana (ficou com a parte do Vlad)"
+  },
+  "9ql109mroekomyc41yf3": {
+   "atualizadaEm": "2026-11-22T13:45:18.281Z",
+   "criadaEm": "2026-10-22T13:02:43.373Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "prazo": "2026-11-23",
+   "status": "andamento",
+   "titulo": "Aprimorar proposta pedagógica piscina"
+  },
+  "ab0z3x3ejp6zi3awdyqw": {
+   "atualizadaEm": "2026-10-22T12:14:57.043Z",
+   "criadaEm": "2026-10-20T23:33:24.810Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-10-21",
+   "status": "feita",
+   "titulo": "Recuperar chip do telefone"
+  },
+  "bac9wp9j2jfk3m4xlybj": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:37:05.826Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 12,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-12",
+   "status": "afazer",
+   "titulo": "12. Ribeiro de Abreu"
+  },
+  "c7k1r5h66q5vtxglzhiy": {
+   "atualizadaEm": "2026-11-10T22:48:53.938Z",
+   "criadaEm": "2026-10-19T14:45:51.435Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-30",
+   "status": "feita",
+   "titulo": "Single Sion - Contrato Social"
+  },
+  "d105u8huuvq3eq23y4q2": {
+   "atualizadaEm": "2026-10-28T21:29:50.996Z",
+   "criadaEm": "2026-10-28T21:23:02.171Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-30",
+   "status": "feita",
+   "titulo": "Compra de acessórios Single Sion"
+  },
+  "e1aawz0qi4ccaqfbwyll": {
+   "atualizadaEm": "2026-10-23T11:26:05.813Z",
+   "criadaEm": "2026-10-19T12:14:13.113Z",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Céu Azul: Aguardando o Lucas realizar os ajustes no Tecace para dar continuidade à virada."
+  },
+  "eg1zvw9la3mmlmoai51n": {
+   "atualizadaEm": "2026-11-13T18:01:22.034Z",
+   "criadaEm": "2026-10-23T13:10:12.031Z",
+   "entrega": "RH",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-12-07",
+   "status": "andamento",
+   "titulo": "Regularização equipe",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "eg5e8kpdtqwuew7hz4ta": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-10-22T13:04:13.628Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 5,
+   "pai": "proj-layouts",
+   "prazo": "2026-11-28",
+   "status": "afazer",
+   "titulo": "5. Layout Sagrada"
+  },
+  "fkvtimgx5l789o176arl": {
+   "atualizadaEm": "2026-10-26T15:11:30.197Z",
+   "criadaEm": "2026-10-26T14:58:29.339Z",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "ordem": 2,
+   "prazo": "2026-10-30",
+   "status": "afazer",
+   "titulo": "Pilates Buritis",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "flk1ksvk2tmb3hi5khsl": {
+   "atualizadaEm": "2026-11-25T20:30:27.357Z",
+   "criadaEm": "2026-11-13T16:59:22.168Z",
+   "entrega": "",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-25",
+   "status": "andamento",
+   "titulo": "Analisar 3º tri Class"
+  },
+  "fvkvmd7gsf5cu0tqu1qg": {
+   "atualizadaEm": "2026-11-22T13:45:24.371Z",
+   "criadaEm": "2026-10-19T15:28:17.548Z",
+   "entrega": "",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-11-11",
+   "status": "feita",
+   "titulo": "Inauguração Prime Sion (19/11)"
+  },
+  "fvxfj1ubisxmj8vujxo0": {
+   "atualizadaEm": "2026-10-26T15:12:20.802Z",
+   "criadaEm": "2026-10-23T13:10:51.573Z",
+   "entrega": "RH",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-12-28",
+   "status": "afazer",
+   "titulo": "Regularização Studio",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "fyrmyxxp9x4up8wankft": {
+   "atualizadaEm": "2026-11-16T11:14:06.503Z",
+   "criadaEm": "2026-10-22T13:16:17.330Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "prazo": "2026-11-17",
+   "status": "feita",
+   "titulo": "Agenda 2026: eventos, campeonatos"
+  },
+  "g6mxth0yl85nph7upway": {
+   "atualizadaEm": "2026-11-25T20:18:16.765Z",
+   "criadaEm": "2026-10-23T13:15:51.906Z",
+   "entrega": "Samuel",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-11-25",
+   "status": "andamento",
+   "titulo": "Sistema",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "g9oru1jfmm14y0m3fpwg": {
+   "atualizadaEm": "2026-11-25T20:13:31.237Z",
+   "criadaEm": "2026-11-13T17:01:08.229Z",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-11-25",
+   "status": "andamento",
+   "titulo": "DRE Pratique x DRE Class"
+  },
+  "gm2miu8cwogepsum8api": {
+   "atualizadaEm": "2026-11-25T20:58:01.592Z",
+   "criadaEm": "2026-11-25T20:40:10.213Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-12-02",
+   "status": "andamento",
+   "titulo": "Cobrar da contabilidade pagamento de imposto"
+  },
+  "h86ymsh5b0y3ttz8e8ws": {
+   "atualizadaEm": "2026-10-27T13:12:18.637Z",
+   "criadaEm": "2026-10-19T15:23:51.972Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-10-24",
+   "status": "feita",
+   "titulo": "Pintura teto Single (Decir)"
+  },
+  "hany1u8ki2qd0ywlh6m8": {
+   "atualizadaEm": "2026-11-25T20:13:40.188Z",
+   "criadaEm": "2026-10-26T12:02:39.004Z",
+   "entrega": "",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-11-25",
+   "status": "andamento",
+   "titulo": "Geasse - Montagem de Sala (inauguração dia 25/11)"
+  },
+  "hepxpzo8oez30bwezdpa": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-10-22T13:03:44.840Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 3,
+   "pai": "proj-layouts",
+   "prazo": "2026-11-21",
+   "status": "afazer",
+   "titulo": "3. Layout Santa Efigênia"
+  },
+  "hh5akrrb9pzphaljzwcp": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:37:20.628Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 13,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-12",
+   "status": "afazer",
+   "titulo": "13. Layout Cidade Nova"
+  },
+  "hikpjtvay2yfpev2zyzu": {
+   "criadaEm": "2026-10-19T15:41:38.093Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-10-21",
+   "status": "afazer",
+   "titulo": "Recebimento Geraldinho - Investimento Single"
+  },
+  "i2dmu3at4qf99cafktb0": {
+   "atualizadaEm": "2026-11-25T20:16:10.291Z",
+   "criadaEm": "2026-11-13T18:04:29.166Z",
+   "entrega": "",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Layout: papel de parede, logo e plotagem do blindex"
+  },
+  "i3c9myck22bbn3155568": {
+   "atualizadaEm": "2026-11-13T16:58:55.558Z",
+   "criadaEm": "2026-10-19T15:24:03.629Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-13",
+   "status": "feita",
+   "titulo": "Reforma parede Saramenha (Decir)"
+  },
+  "ipje2adb8eh939a74g6h": {
+   "atualizadaEm": "2026-11-16T10:58:26.193Z",
+   "criadaEm": "2026-11-10T22:48:06.926Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 1,
+   "pai": "proj-layouts",
+   "prazo": "2026-11-21",
+   "status": "andamento",
+   "titulo": "1. Fechar projeto Lindeia"
+  },
+  "iuwqyp8nl2gkipwwiq8i": {
+   "atualizadaEm": "2026-11-25T20:17:51.832Z",
+   "criadaEm": "2026-10-23T12:58:49.409Z",
+   "entrega": "Rafael",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-11-24",
+   "status": "feita",
+   "titulo": "Marcenaria",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "jn8q2ipejgsva92vlh3q": {
+   "atualizadaEm": "2026-11-23T11:51:36.868Z",
+   "criadaEm": "2026-10-19T15:29:01.357Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "Fechamento de contrato com os Fisioterapeutas"
+  },
+  "jvip0g82a6bcc6hvwsss": {
+   "atualizadaEm": "2026-11-10T22:48:26.056Z",
+   "criadaEm": "2026-10-28T21:25:46.435Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-29",
+   "status": "feita",
+   "titulo": "Me enviar as notas de pagamento Sion"
+  },
+  "k246ttxf4xe02orfm2d1": {
+   "atualizadaEm": "2026-11-25T21:07:16.926Z",
+   "criadaEm": "2026-11-25T21:07:04.111Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "Troca do banco do Class NF (Paulo) - envio para Rio Branco"
+  },
+  "kwgh9uc88193xda3xu6j": {
+   "atualizadaEm": "2026-11-25T20:57:56.465Z",
+   "criadaEm": "2026-11-25T20:54:33.382Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Organizar venda de equipamentos do Alípio de Melo"
+  },
+  "lfhetv6tf6efknjbqjqm": {
+   "atualizadaEm": "2026-11-25T20:15:30.852Z",
+   "criadaEm": "2026-10-19T15:33:17.348Z",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "ordem": 5,
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Sala Pilates - Rio Branco",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "mhevt8h5kumu5og7isfk": {
+   "atualizadaEm": "2026-11-22T13:44:28.731Z",
+   "criadaEm": "2026-11-13T14:29:40.274Z",
+   "entrega": "",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-11-16",
+   "status": "feita",
+   "titulo": "Entrega da analise dos DREs"
+  },
+  "mk1-0": {
+   "atualizadaEm": "2026-11-10T22:26:18.245Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "prazo": "2026-11-13",
+   "status": "feita",
+   "titulo": "1. Contratações: Pilates / Escritório"
+  },
+  "mk1-1": {
+   "atualizadaEm": "2026-11-10T22:15:07.410Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk1-0",
+   "prazo": "2026-10-30",
+   "status": "feita",
+   "titulo": "Pilates Santo Agostinho: contratar 2  prof. noite"
+  },
+  "mk1-2": {
+   "atualizadaEm": "2026-11-10T22:15:41.443Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk1-0",
+   "prazo": "2026-10-30",
+   "status": "feita",
+   "titulo": "Pilates Arena Guarani: contratar 1 profissional manhã"
+  },
+  "mk1-3": {
+   "atualizadaEm": "2026-11-10T22:26:05.031Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk1-0",
+   "prazo": "2026-11-11",
+   "status": "feita",
+   "titulo": "Pilates Céu Azul: contratar 1 profi. 1 manhã e 1 noite"
+  },
+  "mk1-4": {
+   "atualizadaEm": "2026-11-10T22:16:17.343Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk1-0",
+   "prazo": "2026-11-04",
+   "status": "feita",
+   "titulo": "Back Office: contratar 1 colaborador CLT 08:00 às 18:00"
+  },
+  "mk1-5": {
+   "atualizadaEm": "2026-11-10T22:16:30.267Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk1-0",
+   "prazo": "2026-11-04",
+   "status": "feita",
+   "titulo": "Back Office: contratar 2 estagiários: 07:00 às  13:00 // 12:00 às 18:00"
+  },
+  "mk3-0": {
+   "atualizadaEm": "2026-11-22T13:48:24.524Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "prazo": "2026-11-18",
+   "status": "andamento",
+   "titulo": "3. Contabilidade e Jurídico: cobrar responsáveis e destravar documentos"
+  },
+  "mk3-3": {
+   "atualizadaEm": "2026-11-25T20:14:34.135Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "jak020k702jtqz2uyxef",
+   "pai": "mk3-0",
+   "prazo": "2026-11-23",
+   "status": "andamento",
+   "titulo": "Single Ouro Preto: acompanhar transferência da contabilidade",
+   "transf": {
+    "de": "j28boe12poco2dumh3j0",
+    "em": "2026-11-13"
+   }
+  },
+  "mk5-0": {
+   "atualizadaEm": "2026-11-22T13:44:50.652Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "entrega": "",
+   "lider": "j28boe12poco2dumh3j0",
+   "prazo": "2026-11-13",
+   "status": "feita",
+   "titulo": "5. RH e DP: responsáveis, procedimentos e rotina que não dependa de uma só pessoa"
+  },
+  "mk5-1": {
+   "atualizadaEm": "2026-11-25T20:27:18.988Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk5-0",
+   "prazo": "2026-12-11",
+   "status": "feita",
+   "titulo": "Mapear as demandas de RH e DP e quem cuida de cada uma hoje"
+  },
+  "mk5-3": {
+   "atualizadaEm": "2026-11-10T22:28:56.037Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk5-0",
+   "prazo": "2026-11-13",
+   "status": "andamento",
+   "titulo": "Definir responsáveis: férias e recibos, cobertura e substituição de aulas, recrutamento e seleção"
+  },
+  "mk5-4": {
+   "atualizadaEm": "2026-11-10T22:27:55.511Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk5-0",
+   "prazo": "2026-11-13",
+   "status": "andamento",
+   "titulo": "Escrever o procedimento de cada rotina"
+  },
+  "mk6-0": {
+   "atualizadaEm": "2026-11-22T13:44:55.734Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "prazo": "2026-11-13",
+   "status": "feita",
+   "titulo": "6. TI: rotina diária de indicadores"
+  },
+  "mk6-1": {
+   "atualizadaEm": "2026-11-12T13:19:22.886Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk6-0",
+   "prazo": "2026-12-11",
+   "status": "andamento",
+   "titulo": "Listar indicadores e fontes: metas e desempenho por unidade, alunos ativos, churn e cancelamentos"
+  },
+  "mk6-3": {
+   "atualizadaEm": "2026-11-10T22:37:59.632Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk6-0",
+   "prazo": "2026-10-30",
+   "status": "feita",
+   "titulo": "Padronizar o modelo do relatório diário"
+  },
+  "mk6-4": {
+   "atualizadaEm": "2026-11-12T13:19:29.968Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk6-0",
+   "prazo": "2026-11-13",
+   "status": "feita",
+   "titulo": "Começar a entrega diária dos indicadores"
+  },
+  "mk7-0": {
+   "atualizadaEm": "2026-10-25T15:43:03.786Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "prazo": "2026-11-04",
+   "status": "feita",
+   "titulo": "7. Alinhamento e acompanhamento durante a viagem"
+  },
+  "mk7-1": {
+   "atualizadaEm": "2026-11-10T22:24:56.100Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk7-0",
+   "prazo": "2026-10-26",
+   "status": "feita",
+   "titulo": "Registrar no quadro todas as pendências e seus responsáveis"
+  },
+  "mk7-2": {
+   "atualizadaEm": "2026-11-10T22:24:57.618Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk7-0",
+   "prazo": "2026-10-26",
+   "status": "feita",
+   "titulo": "Combinar o canal para sinalizar problemas críticos na hora"
+  },
+  "mk7-3": {
+   "atualizadaEm": "2026-11-10T22:24:58.814Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk7-0",
+   "prazo": "2026-10-28",
+   "status": "feita",
+   "titulo": "Agendar alinhamento online para decisões que precisem do Vladimir"
+  },
+  "mk7-4": {
+   "atualizadaEm": "2026-11-10T22:25:00.175Z",
+   "criadaEm": "2026-10-24T12:20:00.000Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "pai": "mk7-0",
+   "prazo": "2026-11-04",
+   "status": "feita",
+   "titulo": "Atualizar diariamente o status das demandas prioritárias"
+  },
+  "nn5c5f6603pe32l7kmft": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:33:33.218Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 7,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-05",
+   "status": "afazer",
+   "titulo": "7. Layout CT / Coletivas SA"
+  },
+  "o7h2eqh4idzblvupe3f4": {
+   "atualizadaEm": "2026-10-27T13:11:49.470Z",
+   "criadaEm": "2026-10-19T14:28:55.801Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Montagem da Single Santo Agostinho"
+  },
+  "p0vs4x3m324r9aa6gldv": {
+   "atualizadaEm": "2026-11-25T20:57:58.522Z",
+   "criadaEm": "2026-11-25T20:54:16.478Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Organizar venda de equipamentos do Funcionários"
+  },
+  "pdpusqmw635myl61u45l": {
+   "atualizadaEm": "2026-11-23T11:19:47.981Z",
+   "criadaEm": "2026-11-12T13:17:17.077Z",
+   "entrega": "",
+   "lider": "3x37aki93dy0bhyfk161",
+   "prazo": "2026-11-13",
+   "status": "feita",
+   "titulo": "Mangabeiras está aceitando Silve - ajustar"
+  },
+  "pk0j77w5eg46bgepotrb": {
+   "atualizadaEm": "2026-11-25T20:18:23.296Z",
+   "criadaEm": "2026-10-23T13:09:36.961Z",
+   "entrega": "Jaqueline",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-11-24",
+   "status": "afazer",
+   "titulo": "Marqueting",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "proj-layouts": {
+   "criadaEm": "2026-11-13T16:02:00.000Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "prazo": "2026-12-12",
+   "status": "andamento",
+   "titulo": "Layouts das unidades"
+  },
+  "pw0n4cfrznejzyygjblq": {
+   "atualizadaEm": "2026-11-16T11:08:26.623Z",
+   "criadaEm": "2026-11-11T12:34:15.217Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 8,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-05",
+   "status": "afazer",
+   "titulo": "8. Layout Goiânia"
+  },
+  "q4l1ui339p6cfxd9yjnw": {
+   "atualizadaEm": "2026-11-25T21:07:41.777Z",
+   "criadaEm": "2026-11-16T11:16:14.999Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "Fazer o fechamento financeiro das salas dos pilates"
+  },
+  "q5meoh34x0sswl96nngd": {
+   "atualizadaEm": "2026-10-27T13:12:14.398Z",
+   "criadaEm": "2026-10-19T15:15:28.162Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Single - Jurídico"
+  },
+  "q960fxh5u7rxyp6xz13s": {
+   "atualizadaEm": "2026-11-25T20:58:05.711Z",
+   "criadaEm": "2026-10-19T15:32:22.250Z",
+   "entrega": "",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-12-04",
+   "status": "andamento",
+   "titulo": "Sala Pilates Bernardo Vasconcelos"
+  },
+  "rlmzju2nu575subgnnls": {
+   "atualizadaEm": "2026-11-13T18:01:07.626Z",
+   "criadaEm": "2026-10-23T12:56:00.819Z",
+   "entrega": "Tiago",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2026-11-06",
+   "status": "feita",
+   "titulo": "Estrutural - execução projeto arquitetônico",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "ru1qo2t2mdu36qlqdaea": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:36:55.772Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 11,
+   "pai": "proj-layouts",
+   "prazo": "2026-12-12",
+   "status": "afazer",
+   "titulo": "11. Layout Nova Floresta"
+  },
+  "sni14s8lbl07v5h5vbaz": {
+   "atualizadaEm": "2026-11-22T13:45:34.934Z",
+   "criadaEm": "2026-11-13T17:52:35.690Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-16",
+   "status": "feita",
+   "titulo": "Disparo de email para unidade Ouro Preto"
+  },
+  "sry4xedxll3vgem60tm8": {
+   "atualizadaEm": "2026-11-25T21:07:33.116Z",
+   "criadaEm": "2026-11-16T11:15:48.481Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "Organizar inauguração dos Pilates"
+  },
+  "t0gic3oy7v9hi2k6t5hy": {
+   "atualizadaEm": "2026-11-22T13:45:27.382Z",
+   "criadaEm": "2026-11-13T17:53:41.318Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-11-16",
+   "status": "feita",
+   "titulo": "Medir equipamentos novos no Sion"
+  },
+  "t73kc6rbksutvlno324w": {
+   "criadaEm": "2026-11-16T11:19:28.550Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-17",
+   "status": "afazer",
+   "titulo": "Ver pagamento ao Léo Single Ouro Preto"
+  },
+  "t79mnuib1x0ibnoz92or": {
+   "atualizadaEm": "2026-10-26T15:12:21.214Z",
+   "criadaEm": "2026-10-23T13:11:09.939Z",
+   "entrega": "Vladimir",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "pai": "y7wthxb02sso0zh7kyjs",
+   "prazo": "2027-01-07",
+   "status": "afazer",
+   "titulo": "Fechamento da implementação",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "tbq9wwpq6q4jgq25xdif": {
+   "atualizadaEm": "2026-10-19T19:31:37.156Z",
+   "criadaEm": "2026-10-19T14:29:12.103Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Equipe Single Santo Agostinho"
+  },
+  "tz77tqd1esmkazbhmxvh": {
+   "atualizadaEm": "2026-11-14T13:43:45.832Z",
+   "criadaEm": "2026-10-27T13:18:48.697Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "prazo": "2026-11-16",
+   "status": "afazer",
+   "titulo": "Criação do Pódio"
+  },
+  "uozazm66hdbshmk6zwnc": {
+   "atualizadaEm": "2026-11-11T12:21:35.282Z",
+   "criadaEm": "2026-10-22T13:06:46.623Z",
+   "entrega": "",
+   "lider": "mioigou96fc0227z1tf2",
+   "prazo": "2026-11-24",
+   "status": "andamento",
+   "titulo": "Uniformes (Léo do Marketing) 24/11"
+  },
+  "uq05w4r7kr3l74n42422": {
+   "atualizadaEm": "2026-10-26T15:11:37.470Z",
+   "criadaEm": "2026-10-26T15:00:40.455Z",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "ordem": 3,
+   "prazo": "2026-10-30",
+   "status": "afazer",
+   "titulo": "Pilates Fernão Dias 2 (jan/2027)",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "uqpbv16ngojatip1a3v7": {
+   "atualizadaEm": "2026-11-10T22:48:57.891Z",
+   "criadaEm": "2026-10-26T19:02:26.224Z",
+   "entrega": "",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-30",
+   "status": "feita",
+   "titulo": "Santo Agostinho ( Inauguração 09/11)"
+  },
+  "val-estag-0": {
+   "atualizadaEm": "2026-11-23T11:51:28.012Z",
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "Estagiários: organização e controle"
+  },
+  "val-estag-1": {
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "ordem": 1,
+   "pai": "val-estag-0",
+   "prazo": "2026-11-25",
+   "status": "afazer",
+   "titulo": "Organizar o controle dos estágios (termos, horários e supervisão)"
+  },
+  "val-estag-2": {
+   "atualizadaEm": "2026-11-25T20:56:18.745Z",
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "ordem": 2,
+   "pai": "val-estag-0",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Entrevistar novos estagiários"
+  },
+  "val-fisio-1": {
+   "atualizadaEm": "2026-11-25T20:55:57.754Z",
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "ordem": 1,
+   "pai": "jn8q2ipejgsva92vlh3q",
+   "prazo": "2026-11-25",
+   "status": "andamento",
+   "titulo": "Completar dados e documentação de cada profissional"
+  },
+  "val-fisio-2": {
+   "atualizadaEm": "2026-11-25T20:56:02.337Z",
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "ordem": 2,
+   "pai": "jn8q2ipejgsva92vlh3q",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Fechar e assinar o contrato com cada fisioterapeuta"
+  },
+  "val-fisio-3": {
+   "atualizadaEm": "2026-11-25T20:56:04.773Z",
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "ordem": 3,
+   "pai": "jn8q2ipejgsva92vlh3q",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Contratar Jaqueline"
+  },
+  "val-fisio-4": {
+   "criadaEm": "2026-11-23T11:55:00.000Z",
+   "entrega": "",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "ordem": 4,
+   "pai": "jn8q2ipejgsva92vlh3q",
+   "prazo": "2026-12-04",
+   "status": "afazer",
+   "titulo": "Regularizar as salas de Pilates junto ao Crefito"
+  },
+  "vk4csyuv30x3ueqq57nl": {
+   "atualizadaEm": "2026-11-25T20:58:55.928Z",
+   "criadaEm": "2026-11-25T20:57:45.581Z",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Contratação Rio Branco"
+  },
+  "vlad-calfer-20251120": {
+   "atualizadaEm": "2026-11-25T21:02:06.425Z",
+   "criadaEm": "2026-11-19T22:05:00.000Z",
+   "entrega": "",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Entrar em contato com a kalfer — garantia Pilates"
+  },
+  "vt3jgkxnm9oqb9bdxjwt": {
+   "atualizadaEm": "2026-11-23T13:52:29.925Z",
+   "criadaEm": "2026-10-19T13:15:29.020Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "prazo": "2026-11-13",
+   "status": "andamento",
+   "titulo": "Líder Sócios Personal Clas"
+  },
+  "vxr0fc7g0qdmtf7yxnc6": {
+   "atualizadaEm": "2026-10-27T13:11:43.108Z",
+   "criadaEm": "2026-10-19T14:45:39.867Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Single Sion (Wanda Bambirra) - Venda dos equipamentos"
+  },
+  "w5e35vo813cvkiumdyur": {
+   "atualizadaEm": "2026-10-26T15:11:43.006Z",
+   "criadaEm": "2026-10-26T14:57:37.105Z",
+   "entrega": "",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "ordem": 4,
+   "prazo": "2026-10-30",
+   "status": "afazer",
+   "titulo": "Programar Pilates industrial (jan 2027)",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "xc7wx20duftyec2aaqr2": {
+   "atualizadaEm": "2026-11-13T14:33:24.765Z",
+   "criadaEm": "2026-10-28T21:22:18.117Z",
+   "entrega": "",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-12-11",
+   "status": "feita",
+   "titulo": "Santo Agostinho: Tela / Logo / Televisão sala e studio / cardio frequencímetro (vlad) / Unformes"
+  },
+  "xcxt6ilt1p9etaxv2v4d": {
+   "atualizadaEm": "2026-11-25T20:14:21.218Z",
+   "criadaEm": "2026-10-22T13:10:27.235Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "prazo": "2026-11-26",
+   "status": "andamento",
+   "titulo": "DRE Piscinas"
+  },
+  "xhcnumpywjhu1v0bd01y": {
+   "atualizadaEm": "2026-10-26T20:15:24.777Z",
+   "criadaEm": "2026-10-19T15:25:23.911Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-10-19",
+   "status": "feita",
+   "titulo": "Pagamento de boleto LMS"
+  },
+  "xzfcawnps583wn6ox3pm": {
+   "atualizadaEm": "2026-11-25T20:56:23.744Z",
+   "criadaEm": "2026-11-23T13:51:22.320Z",
+   "lider": "ze16w5vzsuajhznlaqv1",
+   "prazo": "2026-11-27",
+   "status": "feita",
+   "titulo": "Organização do Waseller"
+  },
+  "y5n49rxu5rhcpjd9cz53": {
+   "atualizadaEm": "2026-11-10T22:12:18.865Z",
+   "criadaEm": "2026-10-19T12:14:21.413Z",
+   "lider": "d9qx9u1xlp91yc0n83ob",
+   "prazo": "2026-11-06",
+   "status": "feita",
+   "titulo": "Tirol: Virada prevista para esta semana. Vou organizar os processos necessários.",
+   "transf": {
+    "de": "j28boe12poco2dumh3j0",
+    "em": "2026-10-26"
+   }
+  },
+  "y7wthxb02sso0zh7kyjs": {
+   "atualizadaEm": "2026-11-13T18:05:55.732Z",
+   "criadaEm": "2026-10-23T12:55:09.916Z",
+   "entrega": "",
+   "lider": "zwrqjdg2dge07c58jkyy",
+   "ordem": 6,
+   "prazo": "2026-11-30",
+   "status": "andamento",
+   "titulo": "Implementação Unidade Céu Azul - entregar na unidade",
+   "transf": {
+    "de": "6o09ncac6ze38p5xvpu3",
+    "em": "2026-10-26"
+   }
+  },
+  "yf4aeueo7cvwk0bsy5wb": {
+   "atualizadaEm": "2026-10-26T19:01:03.878Z",
+   "criadaEm": "2026-10-19T19:31:14.352Z",
+   "lider": "jak020k702jtqz2uyxef",
+   "prazo": "2026-10-23",
+   "status": "feita",
+   "titulo": "Migração Tecacer Prime Sion"
+  },
+  "ysxmuxhyoeualjoo8s3a": {
+   "atualizadaEm": "2026-11-13T16:02:00.000Z",
+   "criadaEm": "2026-11-11T12:33:12.043Z",
+   "lider": "mioigou96fc0227z1tf2",
+   "ordem": 6,
+   "pai": "proj-layouts",
+   "prazo": "2026-11-28",
+   "status": "afazer",
+   "titulo": "6. Layout Cardoso"
+  },
+  "zko4hvyas93w0upqe0o9": {
+   "atualizadaEm": "2026-11-25T20:29:17.687Z",
+   "criadaEm": "2026-11-25T20:29:09.518Z",
+   "lider": "6o09ncac6ze38p5xvpu3",
+   "prazo": "2026-11-27",
+   "status": "andamento",
+   "titulo": "Cobrar Gener programação 2027 Pilates"
+  },
+  "zlp8bsph93e8cbgjnr5u": {
+   "atualizadaEm": "2026-11-25T21:04:54.246Z",
+   "criadaEm": "2026-10-19T13:15:06.218Z",
+   "lider": "j28boe12poco2dumh3j0",
+   "prazo": "2026-11-25",
+   "status": "feita",
+   "titulo": "Contratação Gestor (a) Pilates"
+  }
+ }
+}
