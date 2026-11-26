@@ -1,9 +1,10 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Tarefas dos Líderes de Campo</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
-/* Layout: duas abas — Tarefas (quadro por líder no período) e Projetos (cartões com fase, semáforo, progresso e subtarefas que alimentam o quadro) */
+/* Layout: três abas — Tarefas (quadro por líder no período, só o que está aberto), Projetos (cartões com semáforo e progresso) e Concluídas (histórico do que foi feito, por mês) */
 :root{
   --bg:#f7f4ec; --surface:#ffffff; --ink:#1f1a10; --muted:#6b6250; --line:#e6dfcc;
   --accent:#9a6c0c; --accent-soft:#f6ebcf;
@@ -193,6 +194,23 @@ mark{background:var(--accent-soft);color:var(--ink);border-radius:3px;padding:0 
 .is-dragging .leader{outline:2px dashed var(--line);outline-offset:-2px;position:relative}
 .leader.drop{outline-color:var(--accent);background:var(--accent-soft)}
 .leader.drop::after{content:attr(data-alvo);position:absolute;inset:auto 12px 10px auto;background:var(--accent);color:var(--surface);font-weight:700;font-size:.82rem;padding:4px 10px;border-radius:999px;pointer-events:none}
+.cc-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cc-tools select{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 10px;max-width:100%}
+.cc-month{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cc-mhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.cc-mhead h3{text-transform:capitalize}
+.cc-item{display:grid;grid-template-columns:2em minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line)}
+.cc-item:last-child{border-bottom:0}
+.cc-ico{display:grid;place-items:center;width:1.9em;height:1.9em;border-radius:7px;background:var(--ok-bg)}
+.cc-main{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cc-title{font-weight:700;overflow-wrap:anywhere}
+.cc-meta{font-size:.82rem;color:var(--muted);overflow-wrap:anywhere}
+.cc-meta b{color:var(--ink);font-weight:600}
+.cc-side{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.cc-date{font-family:var(--mono);font-size:.78rem;color:var(--ok);white-space:nowrap}
+.cc-item.hit{animation:hit 2.4s ease-out}
+.done-note{display:block;width:100%;text-align:left;border:0;border-top:1px dashed var(--line);background:transparent;color:var(--ok);font-weight:600;font-size:.85rem;padding:8px 14px 8px 46px;cursor:pointer}
+.done-note:hover{background:var(--ok-bg)}
 .toast-btn{background:transparent;border:0;color:var(--bg);font-weight:800;text-decoration:underline;cursor:pointer;padding:0 0 0 6px}
 @media (max-width:640px){
   .summary{grid-template-columns:repeat(2,1fr)}
@@ -213,7 +231,11 @@ mark{background:var(--accent-soft);color:var(--ink);border-radius:3px;padding:0 
   .proj-side{flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:wrap}
   .subadd{grid-template-columns:1fr 1fr}
   .subadd .fld:first-child{grid-column:1/-1}
-  .task.sub,.subwrap .subadd,.sub-empty{padding-left:26px}
+  .task.sub,.subwrap .subadd,.sub-empty,.done-note{padding-left:26px}
+  .cc-item{grid-template-columns:2em minmax(0,1fr)}
+  .tabs{gap:0}
+  .tab{padding:8px 9px 10px;font-size:1.08rem;gap:5px}
+  .cc-side{grid-column:2;flex-direction:row;align-items:center;justify-content:space-between}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -234,6 +256,7 @@ mark{background:var(--accent-soft);color:var(--ink);border-radius:3px;padding:0 
   <nav class="tabs" role="tablist" aria-label="Seções">
     <button type="button" class="tab" role="tab" id="tabTarefas" data-tab="tarefas" aria-selected="true">Tarefas <span class="n" id="nTarefas">0</span></button>
     <button type="button" class="tab" role="tab" id="tabProjetos" data-tab="projetos" aria-selected="false">Projetos <span class="n" id="nProjetos">0</span></button>
+    <button type="button" class="tab" role="tab" id="tabConcluidas" data-tab="concluidas" aria-selected="false">Concluídas <span class="n" id="nConcluidas">0</span></button>
   </nav>
 
   <div class="search" role="search">
@@ -318,6 +341,18 @@ mark{background:var(--accent-soft);color:var(--ink);border-radius:3px;padding:0 
     <section id="projList" style="display:flex;flex-direction:column;gap:14px"></section>
   </div>
 
+  <!-- ===== ABA CONCLUÍDAS ===== -->
+  <div class="view" id="viewConcluidas" hidden>
+    <section class="panel">
+      <div class="cc-tools">
+        <select id="ccLider" aria-label="Filtrar por líder"></select>
+        <span class="msg-note" id="ccInfo"></span>
+      </div>
+      <p class="msg-note" style="margin:0">Tudo o que foi marcado como ✅ feito sai do quadro de Tarefas e fica guardado aqui, com a data de conclusão e o líder responsável. Marcou por engano? Toque em <b>Reabrir</b> e o item volta para o quadro.</p>
+    </section>
+    <section id="ccList" style="display:flex;flex-direction:column;gap:14px"></section>
+  </div>
+
   <p class="msg-note" id="status"></p>
 </div>
 <datalist id="dlEntrega"></datalist>
@@ -336,7 +371,7 @@ let db=null, canWrite=true, lideres=[], tarefas=[];
 let weekStart=monday(new Date()), rangeEnd=addDays(monday(new Date()),6);
 let pendingDel=null, editing=null, draft=null, prazoEditing=null, filtro=null;
 let tab="tarefas", sfiltro=null, expanded=new Set(), subDrafts={}, pendingRender=false;
-let byId={}, CH={}, dragId=null;
+let byId={}, CH={}, dragId=null, ccLider="", ccHit=null;
 
 function pad(n){return String(n).padStart(2,"0")}
 function iso(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())}
@@ -384,6 +419,10 @@ function semaforo(p){
   if(subs.some(t=>t.status!=="feita"&&t.prazo<=amanha)||(p.prazo<=em7&&pct<.7))return"amarelo";
   return"verde";
 }
+/* data de conclusão: gravada em concluidaEm a partir de agora; para as antigas, a última alteração (ou o prazo) */
+function concluidaEm(t){const s=t.concluidaEm||t.atualizadaEm||"";if(s){const d=new Date(s);if(!isNaN(d))return iso(d)}return t.prazo}
+function dmy(s){if(!s)return"—";const d=parse(s);return pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear()}
+const aberta=t=>t.status!=="feita";
 function entregaTxt(t){return t.entrega?" — entrega: "+t.entrega:""}
 function extra(t){if(t.status==="feita")return"";if(isLate(t))return" (atrasada, prazo era "+br(t.prazo)+")";return" (prazo "+br(t.prazo)+")"}
 
@@ -499,9 +538,10 @@ function editRow(t,isSubRow){
 
 function subBlock(p){
   const li=el("li","subwrap");const ul=el("ul","tasks");
-  const ks=kids(p);
+  const ks=kids(p),abertas=ks.filter(aberta),nf=ks.length-abertas.length;
   if(!ks.length)li.append(el("div","empty-l sub-empty","Quebre esta tarefa em etapas, cada uma com responsável e prazo."));
-  ks.forEach(k=>ul.append(taskRow(k,"sub")));li.append(ul);
+  abertas.forEach(k=>ul.append(taskRow(k,"sub")));li.append(ul);
+  if(nf){const b=el("button","done-note","✅ "+nf+(nf>1?" etapas concluídas":" etapa concluída")+" — ver em Concluídas");b.type="button";b.onclick=()=>{ccLider="";ccHit=null;setTab("concluidas")};li.append(b)}
   if(canWrite)li.append(subAddForm(p));
   return li;
 }
@@ -529,16 +569,17 @@ function abrirPai(id){filtro=null;expanded.add(id);const p=byId[id];if(p)setOpen
 function render(){
   indexar();
   const busc=!!busca.trim();
-  $("viewTarefas").hidden=busc||tab!=="tarefas";$("viewProjetos").hidden=busc||tab!=="projetos";$("weeknav").hidden=busc||tab!=="tarefas";
+  $("viewTarefas").hidden=busc||tab!=="tarefas";$("viewProjetos").hidden=busc||tab!=="projetos";$("viewConcluidas").hidden=busc||tab!=="concluidas";$("weeknav").hidden=busc||tab!=="tarefas";
   $("results").hidden=!busc;$("qClear").hidden=!busc;
   document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===tab)));
   const pais=tarefas.filter(t=>!isSub(t)&&kids(t).length);
   $("nProjetos").textContent=pais.filter(p=>semaforo(p)!=="concluido").length;
   $("nTarefas").textContent=itensPeriodo().filter(t=>t.status!=="feita").length;
+  $("nConcluidas").textContent=listaConcluidas().length;
   fillLiderSelect($("fLider"));
   const dl=$("dlEntrega");dl.innerHTML="";[...new Set(tarefas.map(t=>(t.entrega||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt")).forEach(n=>dl.append(new Option(n)));
   if(busc){renderBusca();return}
-  if(tab==="tarefas")renderTarefas();else renderProjetos(pais);
+  if(tab==="tarefas")renderTarefas();else if(tab==="concluidas")renderConcluidas();else renderProjetos(pais);
 }
 function fillLiderSelect(sel){const keep=sel.value;sel.innerHTML="";
   if(!lideres.length)sel.append(new Option("Cadastre um líder primeiro",""));
@@ -578,6 +619,7 @@ function renderTarefas(){
     else{
       tops=tarefas.filter(t=>t.lider===l.id&&!isSub(t)&&(inRange(t)||kids(t).some(inRange))).sort(ord);
       foreign=tarefas.filter(t=>isSub(t)&&t.lider===l.id&&byId[t.pai].lider!==l.id&&inRange(t)).sort(ord);
+      /* concluídas saem do quadro (vão para a aba Concluídas), mas continuam contando no "X/Y feitas" e na mensagem */
     }
     shown++;
     const box=el("article","leader");
@@ -599,9 +641,11 @@ function renderTarefas(){
     const ul=el("ul","tasks");
     if(filtro)flat.forEach(t=>ul.append(taskRow(t,"flat")));
     else{
+      const vTops=tops.filter(t=>aberta(t)&&(!kids(t).length||kids(t).some(aberta))),vFor=foreign.filter(t=>aberta(t)&&aberta(byId[t.pai]));
       if(!tops.length&&!foreign.length)box.append(el("div","empty-l","Nenhuma tarefa neste período."));
-      tops.forEach(t=>{ul.append(taskRow(t,"top"));if(expanded.has(t.id))ul.append(subBlock(t))});
-      foreign.forEach(t=>ul.append(taskRow(t,"flat")));
+      else if(!vTops.length&&!vFor.length)box.append(el("div","empty-l","Tudo feito neste período. ✅ As tarefas estão na aba Concluídas."));
+      vTops.forEach(t=>{ul.append(taskRow(t,"top"));if(expanded.has(t.id))ul.append(subBlock(t))});
+      vFor.forEach(t=>ul.append(taskRow(t,"flat")));
     }
     box.append(ul);
     if(!filtro){const fim=iso(rangeEnd);const fut=tarefas.filter(t=>t.lider===l.id&&!isSub(t)&&t.prazo>fim&&t.status!=="feita"&&!tops.includes(t)).sort((x,y)=>x.prazo.localeCompare(y.prazo));
@@ -652,6 +696,39 @@ function renderProjetos(pais){
     list.append(card)});
 }
 
+/* ---------- aba Concluídas: tarefas e etapas feitas, por mês de conclusão ---------- */
+function listaConcluidas(){return tarefas.filter(t=>t.status==="feita")}
+const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+function renderConcluidas(){
+  const sel=$("ccLider");sel.innerHTML="";sel.append(new Option("Todos os líderes",""));
+  lideres.forEach(l=>sel.append(new Option(l.nome,l.id)));
+  if(ccLider&&!lideres.some(l=>l.id===ccLider))ccLider="";sel.value=ccLider;
+  const todas=listaConcluidas(),lista=todas.filter(t=>!ccLider||t.lider===ccLider)
+    .map(t=>({t,d:concluidaEm(t)})).sort((a,b)=>b.d.localeCompare(a.d)||a.t.titulo.localeCompare(b.t.titulo,"pt"));
+  $("ccInfo").textContent=lista.length+(lista.length!==1?" itens concluídos":" item concluído")+(ccLider?" por "+liderNome(ccLider):"");
+  const box=$("ccList");box.innerHTML="";
+  if(!lista.length){const e=el("div","empty");e.append(el("h2",null,"Nada concluído ainda"),el("p",null,"Quando uma tarefa ou etapa for marcada como ✅ feita, ela aparece aqui com a data e o líder responsável."));box.append(e);return}
+  const grupos=new Map();lista.forEach(x=>{const k=x.d.slice(0,7);if(!grupos.has(k))grupos.set(k,[]);grupos.get(k).push(x)});
+  grupos.forEach((itens,k)=>{
+    const [y,m]=k.split("-").map(Number);
+    const sec=el("section","cc-month");const h=el("div","cc-mhead");h.append(el("h3",null,MESES[m-1]+" "+y),el("span","tally",itens.length+(itens.length>1?" concluídas":" concluída")));sec.append(h);
+    itens.forEach(({t,d})=>{
+      const row=el("div","cc-item");row.id="cc-"+t.id;
+      const main=el("div","cc-main");main.append(el("span","cc-title",t.titulo));
+      const meta=el("span","cc-meta");const add=(rot,val)=>{if(!val)return;if(meta.childNodes.length)meta.append(" · ");meta.append(rot,el("b",null,val))};
+      add("Líder: ",liderNome(t.lider));
+      if(isSub(t))add("Projeto: ",byId[t.pai].titulo);
+      const ks=kids(t);if(ks.length){const ab=ks.filter(aberta).length;meta.append(" · Projeto com "+ks.length+" etapas"+(ab?" ("+ab+" ainda aberta"+(ab>1?"s":"")+")":""))}
+      if(t.entrega)add("Entrega: ",t.entrega);
+      add("Prazo era: ",dm(t.prazo));
+      main.append(meta);
+      const side=el("div","cc-side");side.append(el("span","cc-date","✅ "+dmy(d)));
+      if(canWrite){const rb=el("button","btn small","Reabrir");rb.type="button";rb.title="Voltar para o quadro de tarefas";rb.setAttribute("aria-label","Reabrir "+t.titulo);rb.onclick=()=>setStatus(t,"andamento");side.append(rb)}
+      row.append(el("span","cc-ico","✅"),main,side);sec.append(row)});
+    box.append(sec)});
+  if(ccHit){const id=ccHit;ccHit=null;setTimeout(()=>{const r=$("cc-"+id);if(r){r.scrollIntoView({behavior:"smooth",block:"center"});r.classList.add("hit")}},80)}
+}
+
 /* ---------- busca por palavra-chave: título, pessoa que entrega, líder e projeto ---------- */
 let busca="";
 const norm=x=>String(x||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
@@ -685,6 +762,7 @@ function renderBusca(){
 }
 function irPara(t){
   busca="";$("q").value="";filtro=null;
+  const pf=isSub(t)&&byId[t.pai].status==="feita";if(t.status==="feita"||pf){ccLider="";ccHit=t.status==="feita"?t.id:t.pai;setTab("concluidas");return}
   const raiz=isSub(t)?byId[t.pai]:t;
   if(isSub(t))expanded.add(t.pai);
   setOpen(raiz.lider,true);setOpen(t.lider,true);
@@ -712,7 +790,12 @@ async function transferir(t,novo){
 /* ---------- ações ---------- */
 function copy(txt,pre){try{navigator.clipboard.writeText(txt).then(()=>toast("Mensagem copiada"),()=>fallback(pre))}catch(e){fallback(pre)}}
 function fallback(pre){pre.hidden=false;const r=document.createRange();r.selectNodeContents(pre);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Texto selecionado — copie manualmente")}
-async function setStatus(t,st){if(!db||t.status===st)return;try{await db.doc("tarefas/"+t.id).update({status:st,atualizadaEm:new Date().toISOString()})}catch(e){toast("Não foi possível salvar o status")}}
+async function setStatus(t,st){if(!db||t.status===st)return;const antes=t.status,agora=new Date().toISOString();
+  const upd={status:st,atualizadaEm:agora};if(st==="feita")upd.concluidaEm=agora;else if(antes==="feita")upd.concluidaEm=null;
+  try{await db.doc("tarefas/"+t.id).update(upd);
+    if(st==="feita")toastAcao("✅ Concluída — guardada na aba Concluídas.","Desfazer",()=>setStatus(byId[t.id]||t,antes));
+    else if(antes==="feita"&&tab==="concluidas")toast("Reaberta — voltou para o quadro de Tarefas")}
+  catch(e){toast("Não foi possível salvar o status")}}
 async function delTarefa(t){if(pendingDel!==t.id){pendingDel=t.id;render();return}pendingDel=null;
   try{for(const k of kids(t)){await db.doc("tarefas/"+k.id).delete()}await db.doc("tarefas/"+t.id).delete();expanded.delete(t.id);toast("Excluído")}catch(e){toast("Não foi possível excluir")}}
 async function delLider(l){
@@ -743,6 +826,7 @@ $("qClear").onclick=()=>{busca="";$("q").value="";render();$("q").focus()};
 $("openAll").onclick=()=>{lideres.forEach(l=>setOpen(l.id,true));render()};
 $("closeAll").onclick=()=>{lideres.forEach(l=>setOpen(l.id,false));render()};
 $("pClearFilter").onclick=()=>{sfiltro=null;render()};
+$("ccLider").onchange=()=>{ccLider=$("ccLider").value;render()};
 $("rIni").onchange=()=>{const v=$("rIni").value;if(!v)return;weekStart=parse(v);if(rangeEnd<weekStart)rangeEnd=addDays(weekStart,6);render()};
 $("rFim").onchange=()=>{const v=$("rFim").value;if(!v)return;const d=parse(v);rangeEnd=d<weekStart?weekStart:d;render()};
 $("today").onclick=()=>{weekStart=monday(new Date());rangeEnd=addDays(weekStart,6);render()};
@@ -765,6 +849,7 @@ function liveRender(){
 document.addEventListener("focusout",()=>setTimeout(()=>{if(pendingRender&&!prazoEditing)liveRender()},250));
 
 if(location.hash==="#projetos")tab="projetos";
+if(location.hash==="#concluidas")tab="concluidas";
 render();
 $("status").textContent="Carregando o quadro…";
 (async()=>{
@@ -777,3 +862,5 @@ $("status").textContent="Carregando o quadro…";
 })();
 </script>
 
+
+</body></html>
