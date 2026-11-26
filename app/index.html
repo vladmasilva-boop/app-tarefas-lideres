@@ -641,7 +641,7 @@ function renderTarefas(){
     const ul=el("ul","tasks");
     if(filtro)flat.forEach(t=>ul.append(taskRow(t,"flat")));
     else{
-      const vTops=tops.filter(t=>kids(t).length?kids(t).some(aberta):aberta(t)),vFor=foreign.filter(aberta);
+      const vTops=tops.filter(t=>aberta(t)&&(!kids(t).length||kids(t).some(aberta))),vFor=foreign.filter(t=>aberta(t)&&aberta(byId[t.pai]));
       if(!tops.length&&!foreign.length)box.append(el("div","empty-l","Nenhuma tarefa neste período."));
       else if(!vTops.length&&!vFor.length)box.append(el("div","empty-l","Tudo feito neste período. ✅ As tarefas estão na aba Concluídas."));
       vTops.forEach(t=>{ul.append(taskRow(t,"top"));if(expanded.has(t.id))ul.append(subBlock(t))});
@@ -697,7 +697,7 @@ function renderProjetos(pais){
 }
 
 /* ---------- aba Concluídas: tarefas e etapas feitas, por mês de conclusão ---------- */
-function listaConcluidas(){return tarefas.filter(t=>t.status==="feita"&&!kids(t).length)}
+function listaConcluidas(){return tarefas.filter(t=>t.status==="feita")}
 const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
 function renderConcluidas(){
   const sel=$("ccLider");sel.innerHTML="";sel.append(new Option("Todos os líderes",""));
@@ -718,6 +718,7 @@ function renderConcluidas(){
       const meta=el("span","cc-meta");const add=(rot,val)=>{if(!val)return;if(meta.childNodes.length)meta.append(" · ");meta.append(rot,el("b",null,val))};
       add("Líder: ",liderNome(t.lider));
       if(isSub(t))add("Projeto: ",byId[t.pai].titulo);
+      const ks=kids(t);if(ks.length){const ab=ks.filter(aberta).length;meta.append(" · Projeto com "+ks.length+" etapas"+(ab?" ("+ab+" ainda aberta"+(ab>1?"s":"")+")":""))}
       if(t.entrega)add("Entrega: ",t.entrega);
       add("Prazo era: ",dm(t.prazo));
       main.append(meta);
@@ -761,7 +762,7 @@ function renderBusca(){
 }
 function irPara(t){
   busca="";$("q").value="";filtro=null;
-  if(t.status==="feita"&&!kids(t).length){ccLider="";ccHit=t.id;setTab("concluidas");return}
+  const pf=isSub(t)&&byId[t.pai].status==="feita";if(t.status==="feita"||pf){ccLider="";ccHit=t.status==="feita"?t.id:t.pai;setTab("concluidas");return}
   const raiz=isSub(t)?byId[t.pai]:t;
   if(isSub(t))expanded.add(t.pai);
   setOpen(raiz.lider,true);setOpen(t.lider,true);
@@ -792,7 +793,7 @@ function fallback(pre){pre.hidden=false;const r=document.createRange();r.selectN
 async function setStatus(t,st){if(!db||t.status===st)return;const antes=t.status,agora=new Date().toISOString();
   const upd={status:st,atualizadaEm:agora};if(st==="feita")upd.concluidaEm=agora;else if(antes==="feita")upd.concluidaEm=null;
   try{await db.doc("tarefas/"+t.id).update(upd);
-    if(st==="feita"&&!kids(t).length)toastAcao("✅ Concluída — guardada na aba Concluídas.","Desfazer",()=>setStatus(byId[t.id]||t,antes));
+    if(st==="feita")toastAcao("✅ Concluída — guardada na aba Concluídas.","Desfazer",()=>setStatus(byId[t.id]||t,antes));
     else if(antes==="feita"&&tab==="concluidas")toast("Reaberta — voltou para o quadro de Tarefas")}
   catch(e){toast("Não foi possível salvar o status")}}
 async function delTarefa(t){if(pendingDel!==t.id){pendingDel=t.id;render();return}pendingDel=null;
